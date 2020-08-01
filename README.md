@@ -19,7 +19,7 @@ $ npm install -g restup-cli
 $ restup COMMAND
 running command...
 $ restup (-v|--version|version)
-restup-cli/1.0.8 win32-x64 node-v14.4.0
+restup-cli/1.0.9 win32-x64 node-v14.4.0
 $ restup --help [COMMAND]
 USAGE
   $ restup COMMAND
@@ -49,7 +49,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.8/src\commands\controller.ts)_
+_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\controller.ts)_
 
 ## `restup help [COMMAND]`
 
@@ -83,7 +83,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.8/src\commands\middleware.ts)_
+_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\middleware.ts)_
 
 ## `restup router NAME`
 
@@ -100,7 +100,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.8/src\commands\router.ts)_
+_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\router.ts)_
 
 ## `restup update [CHANNEL]`
 
