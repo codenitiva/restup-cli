@@ -6,7 +6,7 @@ RESTup PHP&#39;s cli (command line interface) to speed up API development with R
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@restup/cli.svg)](https://npmjs.org/package/@restup/cli)
 [![Downloads/week](https://img.shields.io/npm/dw/@restup/cli.svg)](https://npmjs.org/package/@restup/cli)
-[![License](https://img.shields.io/npm/l/@restup/cli.svg)](https://github.com/werdna521/restup-cli/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/@restup/cli.svg)](https://github.com/codenitiva/restup-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -28,28 +28,51 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`restup controller [FILE]`](#restup-controller-file)
 * [`restup hello [FILE]`](#restup-hello-file)
 * [`restup help [COMMAND]`](#restup-help-command)
 
-## `restup hello [FILE]`
+## `restup controller [FILE]`
 
-describe the command here
+create a RESTup controller
 
 ```
 USAGE
-  $ restup hello [FILE]
+  $ restup controller [FILE]
 
 OPTIONS
-  -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ restup hello
-  hello world from ./src/hello.ts!
 ```
 
-_See code: [src\commands\hello.ts](https://github.com/werdna521/restup-cli/blob/v0.0.1/src\commands\hello.ts)_
+_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v0.0.1/src\commands\controller.ts)_
+
+## `restup middleware [FILE]`
+
+create a RESTup middleware
+
+```
+USAGE
+  $ restup middleware [FILE]
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v0.0.1/src\commands\middleware.ts)_
+
+## `restup router [FILE]`
+
+create a RESTup router
+
+```
+USAGE
+  $ restup router [FILE]
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v0.0.1/src\commands\router.ts)_
 
 ## `restup help [COMMAND]`
 
