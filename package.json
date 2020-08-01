@@ -1,7 +1,7 @@
 {
   "name": "restup-cli",
   "description": "RESTup PHP's cli (command line interface) to speed up API development with RESTup Framework",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Codenitiva @codenitiva",
   "bin": {
     "restup": "./bin/run"
