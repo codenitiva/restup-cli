@@ -1,0 +1,20 @@
+<?php namespace Codenitiva\PHP\Routers;
+
+use Codenitiva\PHP\Controllers\###Controller;
+use Codenitiva\PHP\Responses\Response;
+use Codenitiva\PHP\Requests\Request;
+use Codenitiva\PHP\Routers\SubRouter;
+
+class ###Router extends SubRouter {
+
+  public function __construct() {
+    parent::__construct('##');
+  }
+
+  public function run(Request $req, Response $res) {
+    parent::run($req, $res);
+    $controller = new ###Controller;
+
+    $this->router->get('/', $controller->use('index'));
+  }
+}

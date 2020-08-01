@@ -1,0 +1,12 @@
+<?php namespace Codenitiva\PHP\Controllers;
+
+use Codenitiva\PHP\Controllers\Controller;
+use Codenitiva\PHP\Responses\Response;
+use Codenitiva\PHP\Requests\Request;
+
+class ###Controller extends Controller {
+
+  public function index(Request $req, Response $res) {
+    return $res->json('Hello, RESTup!')->ok();
+  }
+}
