@@ -1,7 +1,7 @@
 {
   "name": "restup-cli",
   "description": "RESTup PHP's cli (command line interface) to speed up API development with RESTup Framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Codenitiva @codenitiva",
   "bin": {
     "restup": "./bin/run"
@@ -35,7 +35,8 @@
     "/bin",
     "/lib",
     "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
+    "/oclif.manifest.json",
+    "*.txt"
   ],
   "homepage": "https://github.com/codenitiva/restup-cli",
   "keywords": [
