@@ -1,4 +1,4 @@
-# RESTup CLI
+RESTup CLI
 ===========
 
 RESTup PHP&#39;s cli (command line interface) to speed up API development with RESTup Framework
