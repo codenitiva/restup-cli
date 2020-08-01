@@ -1,7 +1,7 @@
 {
-  "name": "@restup/cli",
+  "name": "restup-cli",
   "description": "RESTup PHP's cli (command line interface) to speed up API development with RESTup Framework",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "author": "Codenitiva @codenitiva",
   "bin": {
     "restup": "./bin/run"
@@ -60,5 +60,6 @@
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "private": false
 }
