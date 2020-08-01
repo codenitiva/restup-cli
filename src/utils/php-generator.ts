@@ -14,6 +14,6 @@ export default {
 
     // append dependency to requirements.php
     fs.appendFileSync(path.join(process.cwd(), '/requirements.php'),
-      `require_once(__DIR__ . '/app/${type}/${name}${stringCase.toTitleCase(type)}.php');`)
+      `require_once(__DIR__ . '/app/${type}/${name}${stringCase.toTitleCase(type)}.php');\r`)
   },
 }
