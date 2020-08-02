@@ -1,0 +1,10 @@
+<?php namespace Codenitiva\PHP\Models;
+
+class ### extends Model {
+
+  private $table = "##";
+
+  public function __construct() {
+    parent::__construct($this->table);
+  }
+}
