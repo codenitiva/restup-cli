@@ -19,7 +19,7 @@ $ npm install -g restup-cli
 $ restup COMMAND
 running command...
 $ restup (-v|--version|version)
-restup-cli/1.0.9 win32-x64 node-v14.4.0
+restup-cli/1.0.10-alpha win32-x64 node-v14.4.0
 $ restup --help [COMMAND]
 USAGE
   $ restup COMMAND
@@ -31,6 +31,7 @@ USAGE
 * [`restup controller NAME`](#restup-controller-name)
 * [`restup help [COMMAND]`](#restup-help-command)
 * [`restup middleware NAME`](#restup-middleware-name)
+* [`restup model NAME`](#restup-model-name)
 * [`restup router NAME`](#restup-router-name)
 * [`restup update [CHANNEL]`](#restup-update-channel)
 
@@ -49,7 +50,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\controller.ts)_
+_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.10-alpha/src\commands\controller.ts)_
 
 ## `restup help [COMMAND]`
 
@@ -83,7 +84,24 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\middleware.ts)_
+_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.10-alpha/src\commands\middleware.ts)_
+
+## `restup model NAME`
+
+create a RESTup Model
+
+```
+USAGE
+  $ restup model NAME
+
+ARGUMENTS
+  NAME  name of the model
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src\commands\model.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.10-alpha/src\commands\model.ts)_
 
 ## `restup router NAME`
 
@@ -100,7 +118,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.9/src\commands\router.ts)_
+_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.10-alpha/src\commands\router.ts)_
 
 ## `restup update [CHANNEL]`
 
