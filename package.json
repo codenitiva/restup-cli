@@ -1,7 +1,7 @@
 {
   "name": "restup-cli",
   "description": "RESTup PHP's cli (command line interface) to speed up API development with RESTup Framework",
-  "version": "1.0.10-alpha",
+  "version": "1.0.10",
   "author": "Codenitiva @codenitiva",
   "bin": {
     "restup": "./bin/run"
@@ -54,13 +54,7 @@
     ]
   },
   "repository": "codenitiva/restup-cli",
-  "scripts": {
-    "postpack": "rimraf oclif.manifest.json",
-    "posttest": "eslint . --ext .ts --config .eslintrc",
-    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "echo NO TESTS",
-    "version": "oclif-dev readme && git add README.md"
-  },
+  "scripts": {},
   "types": "lib/index.d.ts",
   "private": false
 }
