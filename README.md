@@ -4,9 +4,9 @@ RESTup CLI
 RESTup PHP&#39;s cli (command line interface) to speed up API development with RESTup Framework
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/@restup/cli.svg)](https://npmjs.org/package/@restup/cli)
-[![Downloads/week](https://img.shields.io/npm/dw/@restup/cli.svg)](https://npmjs.org/package/restup-cli)
-[![License](https://img.shields.io/npm/l/@restup/cli.svg)](https://github.com/codenitiva/restup-cli/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/restup-cli.svg)](https://npmjs.org/package/restup-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/restup-cli.svg)](https://npmjs.org/package/restup-cli)
+[![License](https://img.shields.io/npm/l/restup-cli.svg)](https://github.com/codenitiva/restup-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
