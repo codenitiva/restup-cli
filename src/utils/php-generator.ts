@@ -9,11 +9,11 @@ export default {
 
     // create file
     fs.writeFileSync(
-      path.join(process.cwd(), `/app/${type}/${name}${type === 'model' ? '' : stringCase.toTitleCase(type)}.php`),
-      fileText.replace(/###/g, name).replace(/##/, `/${name.toLowerCase()}`))
+      path.join(process.cwd(), `/app/${type}/${name}${stringCase.toTitleCase(type)}.php`),
+      fileText.replace(/###/g, name).replace(/##/, `${name.toLowerCase()}`))
 
     // append dependency to requirements.php
     fs.appendFileSync(path.join(process.cwd(), '/requirements.php'),
-      `require_once(__DIR__ . '/app/${type}/${name}${type === 'model' ? '' : stringCase.toTitleCase(type)}.php');\r`)
+      `require_once(__DIR__ . '/app/${type}/${name}${stringCase.toTitleCase(type)}.php');\r`)
   },
 }
