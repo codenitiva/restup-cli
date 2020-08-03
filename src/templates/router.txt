@@ -3,7 +3,6 @@
 use Codenitiva\PHP\Controllers\###Controller;
 use Codenitiva\PHP\Responses\Response;
 use Codenitiva\PHP\Requests\Request;
-use Codenitiva\PHP\Routers\SubRouter;
 
 class ###Router extends SubRouter {
 

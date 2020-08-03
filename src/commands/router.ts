@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import stringCase from '../utils/string-case'
-import phpGenerator from '../utils/php-generator'
+import controller from '../utils/command-controller'
 import * as chalk from 'chalk'
 import cli from 'cli-ux'
 
@@ -24,7 +24,7 @@ export default class Router extends Command {
     const {args} = this.parse(Router)
 
     cli.action.start(`${chalk.blue('Creating')} ${chalk.yellow(`${args.name}Router`)} for you`)
-    await phpGenerator.generate('router', args.name)
+    await controller.generate('router', args.name)
     cli.action.stop(chalk.green('\nDone.'))
   }
 }
