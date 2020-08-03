@@ -1,0 +1,9 @@
+{
+  "name": "#n",
+  "description": "#d",
+  "cli-version": "#v",
+  "controllers": [],
+  "middlewares": [],
+  "models": [],
+  "routers": []
+}
