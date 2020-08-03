@@ -1,6 +1,5 @@
 <?php namespace Codenitiva\PHP\Middlewares;
 
-use Codenitiva\PHP\Middlewares\Middleware;
 use Codenitiva\PHP\Responses\Response;
 use Codenitiva\PHP\Requests\Request;
 
