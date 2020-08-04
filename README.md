@@ -22,7 +22,7 @@ $ npm install -g restup-cli
 $ restup COMMAND
 running command...
 $ restup (-v|--version|version)
-restup-cli/1.0.11 win32-x64 node-v14.4.0
+restup-cli/1.0.12alpha win32-x64 node-v14.4.0
 $ restup --help [COMMAND]
 USAGE
   $ restup COMMAND
@@ -45,11 +45,11 @@ USAGE
 <!-- commands -->
 * [`restup controller NAME`](#restup-controller-name)
 * [`restup help [COMMAND]`](#restup-help-command)
-* [`restup init [NAME]`](#restup-init-name)
+* [`restup init`](#restup-init)
 * [`restup middleware NAME`](#restup-middleware-name)
 * [`restup model NAME`](#restup-model-name)
 * [`restup router NAME`](#restup-router-name)
-* [`restup start [FILE]`](#restup-start-file)
+* [`restup start [NAME]`](#restup-start-name)
 * [`restup update [CHANNEL]`](#restup-update-channel)
 
 ## `restup controller NAME`
@@ -67,7 +67,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\controller.ts)_
+_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\controller.ts)_
 
 ## `restup help [COMMAND]`
 
@@ -86,22 +86,19 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.1.0/src\commands\help.ts)_
 
-## `restup init [NAME]`
+## `restup init`
 
-create a restup project
+initialize restup config files on existing restup project
 
 ```
 USAGE
-  $ restup init [NAME]
-
-ARGUMENTS
-  NAME  name of your project (default: restup-project)
+  $ restup init
 
 OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\init.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\init.ts)_
+_See code: [src\commands\init.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\init.ts)_
 
 ## `restup middleware NAME`
 
@@ -118,7 +115,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\middleware.ts)_
+_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\middleware.ts)_
 
 ## `restup model NAME`
 
@@ -135,7 +132,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\model.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\model.ts)_
+_See code: [src\commands\model.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\model.ts)_
 
 ## `restup router NAME`
 
@@ -152,23 +149,24 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\router.ts)_
+_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\router.ts)_
 
-## `restup start [FILE]`
+## `restup start [NAME]`
 
-describe the command here
+create a restup project
 
 ```
 USAGE
-  $ restup start [FILE]
+  $ restup start [NAME]
+
+ARGUMENTS
+  NAME  name of your project (default: restup-project)
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
-_See code: [src\commands\start.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.11/src\commands\start.ts)_
+_See code: [src\commands\start.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\start.ts)_
 
 ## `restup update [CHANNEL]`
 

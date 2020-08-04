@@ -1,8 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import phpFS from './php-fs'
 import * as clone from 'git-clone'
 import * as rimraf from 'rimraf'
+import phpFS from './php-fs'
+import doctor from './doctor'
+import config from './config'
 
 export default {
   generate(type: string, name: string): void {
@@ -17,11 +19,30 @@ export default {
         resolve()
       })
     })
+
     await new Promise((resolve, reject) => {
       rimraf(path.join(process.cwd(), name, '.git'), (err: Error) => {
         if (err) reject(err)
         resolve()
       })
     })
+
+    config.create(name, name)
+
+    const classes = doctor.scanDirectoriesForClasses(name)
+    config.setMany(
+      Object.keys(classes),
+      [classes.controllers, classes.middlewares, classes.models, classes.routers],
+      name)
+    phpFS.generateRequirements(name)
+  },
+  init(name: string): void {
+    config.create(name)
+
+    const classes = doctor.scanDirectoriesForClasses()
+    config.setMany(
+      Object.keys(classes),
+      [classes.controllers, classes.middlewares, classes.models, classes.routers])
+    phpFS.generateRequirements()
   },
 }
