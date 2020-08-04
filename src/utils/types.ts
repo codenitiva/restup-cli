@@ -7,3 +7,10 @@ export type RESTUpConfigType = {
   models: string[];
   routers: string[];
 }
+
+export type RESTUpClasses = {
+  controllers: string[];
+  middlewares: string[];
+  models: string[];
+  routers: string[];
+}

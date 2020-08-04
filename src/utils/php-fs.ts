@@ -31,8 +31,6 @@ export default {
     fs.writeFileSync(
       path.join(process.cwd(), `/app/${type}/${name}${stringCase.toTitleCase(type)}.php`),
       fileText.replace(/###/g, name).replace(/##/, `${name.toLowerCase()}`))
-    const configJSON = config.load()
-    configJSON[`${type}s`].push(name.toLowerCase())
-    config.save(configJSON)
+    config.push(`${type}s`, name.toLowerCase())
   },
 }
