@@ -15,11 +15,11 @@ const generateRequireOnces = (dependencies: string[], type: string): string => {
 }
 
 export default {
-  generateRequirements(): void {
-    const {controllers, middlewares, models, routers} = doctor.extractCustomClasses()
+  generateRequirements(prefixFile = ''): void {
+    const {controllers, middlewares, models, routers} = doctor.extractCustomClasses(prefixFile)
     const requirementsTemplate = fs.readFileSync(path.join(__dirname, '../templates/requirements.txt'), 'utf-8')
 
-    fs.writeFileSync(path.join(process.cwd(), '/requirements.php'),
+    fs.writeFileSync(path.join(process.cwd(), prefixFile, '/requirements.php'),
       requirementsTemplate
       .replace(/#controllers/g, generateRequireOnces(controllers, 'controller'))
       .replace(/#middlewares/g, generateRequireOnces(middlewares, 'middleware'))

@@ -4,15 +4,15 @@ import fs from './file-system'
 import {RESTUpClasses} from './types'
 
 export default {
-  extractCustomClasses(): RESTUpClasses {
+  extractCustomClasses(prefixPath = ''): RESTUpClasses {
     try {
-      const {controllers, middlewares, models, routers}: RESTUpClasses = config.load()
+      const {controllers, middlewares, models, routers}: RESTUpClasses = config.load(prefixPath)
       return {controllers, middlewares, models, routers}
     } catch (error) {
       throw error
     }
   },
-  scanDirectoriesForClasses(projectName: string): RESTUpClasses {
+  scanDirectoriesForClasses(projectName = ''): RESTUpClasses {
     const names = fs.readDir.appDir(pathHelper.here(projectName, 'app'))
     return {
       controllers: names[0],
