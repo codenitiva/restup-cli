@@ -1,9 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import phpFS from './php-fs'
 import * as clone from 'git-clone'
 import * as rimraf from 'rimraf'
-import phpFS from './php-fs'
-import doctor from './doctor'
 
 export default {
   generate(type: string, name: string): void {
@@ -24,6 +23,5 @@ export default {
         resolve()
       })
     })
-    console.log(doctor.scanDirectoriesForClasses(name))
   },
 }
