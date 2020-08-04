@@ -1,4 +1,3 @@
-import * as path from 'path'
 import config from './config'
 import pathHelper from './path-helper'
 import fs from './file-system'

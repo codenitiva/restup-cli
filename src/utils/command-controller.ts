@@ -4,6 +4,7 @@ import * as clone from 'git-clone'
 import * as rimraf from 'rimraf'
 import phpFS from './php-fs'
 import doctor from './doctor'
+import config from './config'
 
 export default {
   generate(type: string, name: string): void {
@@ -18,12 +19,20 @@ export default {
         resolve()
       })
     })
+
     await new Promise((resolve, reject) => {
       rimraf(path.join(process.cwd(), name, '.git'), (err: Error) => {
         if (err) reject(err)
         resolve()
       })
     })
-    console.log(doctor.scanDirectoriesForClasses(name))
+
+    config.create(name, name)
+
+    const classes = doctor.scanDirectoriesForClasses(name)
+    config.setMany(
+      Object.keys(classes),
+      [classes.controllers, classes.middlewares, classes.models, classes.routers],
+      name)
   },
 }

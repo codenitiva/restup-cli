@@ -5,7 +5,6 @@ export default {
   readDir: {
     classes(path: string, dir: string): any {
       const files = fs.readdirSync(path)
-      console.log(files)
       return files ? files.map(file => file.toLowerCase().replace(dir, '').replace('.php', '')) : []
     },
     appDir(root: string): any {
