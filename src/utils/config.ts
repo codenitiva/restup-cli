@@ -9,7 +9,7 @@ export default {
       fs.mkdirSync(path.join(process.cwd(), prefixPath, '.restup'))
     fs.writeFileSync(
       path.join(process.cwd(), prefixPath, '.restup/restup.config.json'),
-      template.replace(/#n/, name).replace(/#d/, 'A project created with RESTup CLI').replace(/#v/, '1.0.11'))
+      template.replace(/#n/, name).replace(/#d/, 'A project created with RESTup CLI').replace(/#v/, '1.0.12'))
   },
   load(prefixPath = ''): any {
     const rawJSON = fs.readFileSync(path.join(process.cwd(), prefixPath, '.restup/restup.config.json'), 'utf-8')
