@@ -34,5 +34,15 @@ export default {
       Object.keys(classes),
       [classes.controllers, classes.middlewares, classes.models, classes.routers],
       name)
+    phpFS.generateRequirements(name)
+  },
+  init(name: string): void {
+    config.create(name)
+
+    const classes = doctor.scanDirectoriesForClasses()
+    config.setMany(
+      Object.keys(classes),
+      [classes.controllers, classes.middlewares, classes.models, classes.routers])
+    phpFS.generateRequirements()
   },
 }
