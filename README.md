@@ -22,7 +22,7 @@ $ npm install -g restup-cli
 $ restup COMMAND
 running command...
 $ restup (-v|--version|version)
-restup-cli/1.0.12alpha win32-x64 node-v14.4.0
+restup-cli/1.0.13-alpha win32-x64 node-v14.4.0
 $ restup --help [COMMAND]
 USAGE
   $ restup COMMAND
@@ -67,7 +67,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\controller.ts)_
+_See code: [src\commands\controller.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\controller.ts)_
 
 ## `restup help [COMMAND]`
 
@@ -98,7 +98,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\init.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\init.ts)_
+_See code: [src\commands\init.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\init.ts)_
 
 ## `restup middleware NAME`
 
@@ -115,7 +115,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\middleware.ts)_
+_See code: [src\commands\middleware.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\middleware.ts)_
 
 ## `restup model NAME`
 
@@ -132,7 +132,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\model.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\model.ts)_
+_See code: [src\commands\model.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\model.ts)_
 
 ## `restup router NAME`
 
@@ -149,7 +149,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\router.ts)_
+_See code: [src\commands\router.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\router.ts)_
 
 ## `restup start [NAME]`
 
@@ -166,7 +166,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\start.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.12alpha/src\commands\start.ts)_
+_See code: [src\commands\start.ts](https://github.com/codenitiva/restup-cli/blob/v1.0.13-alpha/src\commands\start.ts)_
 
 ## `restup update [CHANNEL]`
 
